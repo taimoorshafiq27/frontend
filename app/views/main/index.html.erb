@@ -1,12 +1,12 @@
 <%# -- NAVBAR -- %>
 
-<div class="bg-slate-400">
+<div class="bg-sky-800 text-white">
   <header>
     <ul class="flex py-8 px-16">
-      <li class="py-2 px-4"><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Home", root_path %></li>
       <li class="ml-auto py-2 px-4"><%= link_to "About", '#' %></li>
       <li class="ml-16 py-2 px-4"><%= link_to "Contact", '#' %></li>
-      <li class="ml-16 py-2 px-4 font-bold bg-white border-orange-400 border-2 rounded-lg hover:bg-gray-200"><%= link_to "Sign in", '#' %></li>
+      <li class="ml-16 py-2 px-4 font-bold border-white border-2 rounded-lg hover:bg-sky-900"><%= link_to "Sign in", '#' %></li>
     </ul>
   </header>
 </div>
@@ -14,14 +14,19 @@
 <%# -- HERO -- %>
 
 <div class="bg-slate-200">
-  <div class="bg-orange-400 w-1/2"><%# left side %>
+  <div class="pt-16 pb-16 bg-orange-400 w-1/2"><%# left side %>
     <div class="p-16">
-      <h1 class="mb-16 text-6xl">Community driven training platform</h1>
+      <h1 class="mb-4 text-6xl">Software Development Platform With an Emphasis on Repetition</h1>
+      <h2 class="mb-16 text-2xl">Receive timed reminders to review your learning</h2>
       <%= link_to "Sign up!", '#', class: "bg-sky-600 text-xl text-white rounded-lg py-4 px-6 hover:bg-sky-800" %>
     </div>
   </div>
   <div class="w-1/2"><%# right side %>
-
+  <%# carousel of cartoon images showing what the app is about i.e.
+  image_1 = 'I know how to make an array!'
+  image_2 = '5 DAYS LATER - I forgot how to make an array!'
+  image_3 = 'receives review reminder - that's better!'
+   %>
   </div>
 </div>
 
@@ -37,10 +42,11 @@ more spacing between sections /
 roboto font / 
 right side of hero section / 
 automatic carousel for feedback section / 
-ViewComponent %>
+ViewComponent 
+%>
 
 <div class="bg-sky-800">
-  <div class="grid grid-cols-3 gap-4">
+  <div class="grid grid-cols-2 gap-4">
     <%# --- CARD --- %>
     <div class="m-8 p-4 rounded-lg bg-white">
       <p class="pt-4 pb-8 text-center font-bold text-sky-600">PREMIUM</p>
@@ -50,23 +56,6 @@ ViewComponent %>
         <li>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</li>
         <li>Bonuses</li>
         <li>Lorem</li>
-        <li>24/7 support</li>
-        <li>24/7 support</li>
-      </ul>
-      <div class="pt-8 flex justify-center">
-        <%= button_to "Add to basket", "#", class: "m-auto bg-sky-600 text-white rounded-lg py-2 px-4 hover:bg-sky-800"%>
-      </div>
-    </div>
-    <%# --- CARD --- %>
-        <%# --- CARD --- %>
-    <div class="m-8 p-4 rounded-lg bg-white">
-      <p class="pt-4 pb-8 text-center font-bold text-sky-600">PREMIUM</p>
-      <p class="pb-4 text-center text-xl font-bold text-sky-600">£<span class="text-4xl">10</span> /month</p>
-      <p class="pb-4 text-center">Everything included in the other tiers, plus: </p>
-      <ul class="ml-4 list-disc">
-        <li>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</li>
-        <li>Bonuses</li>
-        <li>24/7 support</li>
         <li>24/7 support</li>
         <li>24/7 support</li>
       </ul>
